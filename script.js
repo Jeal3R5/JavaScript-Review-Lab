@@ -136,9 +136,7 @@
 //   console.log("Hey! You're not a cow")
 // };
 
-
-// 4. Commit
-
+// 4. Commit - completed
 
 
 
@@ -146,7 +144,15 @@
 
 //1. Make a variable that holds a person's age; be semantic
 
+//let age = 27;
+
 //2. Write code that will print out "Here are the keys!" if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+
+// if (age >= 16) {
+//   console.log("Here are the keys!")
+// } else if (age < 16) {
+//   console.log("Sorry, you're too young")
+// }
 
 
 
@@ -154,28 +160,66 @@
 /////////////////////////////////////
 // LOOPS
 ////////////////////////////////////
+
 //Remember: use let when you initialize your for loops!
-/* 
-A. The Basics
-
-1.  Write a loop that will print out all the numbers from 0 - 10, inclusive
-
-2. Write a loop that will print out all the numbers from 10 up to and including 400
-
-3. Write a loop that will print out every third number starting with 12 and going no higher than 400
-
-*/
 
 
+//A. The Basics
 
-/*
-B. Get Even
+//1.  Write a loop that will print out all the numbers from 0 - 10, inclusive
 
-1. Print out the numbers that are within the range of 1-100
+// let i = 0;
 
-2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
+// for(let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+  
+//2. Write a loop that will print out all the numbers from 10 up to and including 400
 
-*/
+// let i = 0;
+// for (let i = 10; i <= 400; i++) {
+//   console.log(i)
+// };
+
+//3. Write a loop that will print out every third number starting with 12 and going no higher than 400
+
+// let i = 12
+
+// do {
+//   console.log(i)
+//   i += 3
+// }  while (i <=400)
+
+
+
+
+//B. Get Even
+
+//1. Print out the numbers that are within the range of 1-100
+// let i = 1
+
+// do {
+//   console.log(i)
+//   i++ 
+//    } while (i <= 100)
+
+// if (let i = 1; i <= 100; i++) {
+//   console.log(i);
+// }
+
+
+
+//2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
+
+// let i = 1
+
+// for (let i = 1; i < 101; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i + "<-- this is an even number");
+//   } else {
+//     console.log(i);
+//   }
+// }  
 
 
 
@@ -184,13 +228,47 @@ B. Get Even
 
 //1. for the numbers 0-100, print out "I found a number. High Five!" if the number is a multiple of 5
 
+// let i = 0;
+
+// for (let i = 0; i < 101; i++) {
+//   if (i % 5 == 0) {
+//     console.log(i + " I found a number. High Five!")
+//   } else {
+//     console.log(i);
+//   }
+// }
+
 //2.  Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of 3
+
+
+// let i = 0;
+
+// for (let i = 0; i < 101; i++) {
+//   if (i % 3 == 0) {
+//     console.log(i + " I found a number. Three is a crowd");
+//   } else if (i % 5 == 0) {
+//     console.log(i + " I found a number. High Five!")
+//   } else {
+//     console.log(i);
+//   }
+// }
 
 //3.  For numbers divisible by both three and five, be sure your code prints both messages
 
+let i = 0;
 
-
-
+for (let i = 0; i < 101; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log(i + " I found a number. Three is a crowd." + " I found a number. High Five!");
+  if (i % 3 == 0) {
+    console.log(i + " I found a number. Three is a crowd.");
+  } else if (i % 5 == 0) {
+    console.log(i + " I found a number. High Five!")
+  } else {
+    console.log(i);
+  }
+}
+}
 
 //D. Savings account
 
